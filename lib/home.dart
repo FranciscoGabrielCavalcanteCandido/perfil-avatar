@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:perfil_/cartao_adptativo.dart';
+import 'package:perfil_/cartao_paisagem.dart';
+import 'package:perfil_/cartao_responsivo.dart';
+import 'package:perfil_/cartao_retrato.dart';
 import 'package:perfil_/componente/cartao_email.dart';
 import 'package:perfil_/componente/cartao_nome.dart';
 import 'package:perfil_/componente/cartao_telefone.dart';
@@ -11,16 +15,9 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(60),
-      decoration: const BoxDecoration(color: Colors.white),
-      child: Column(
-        children: [
-          const MeuAvatar(),
-          const CartaoNome(),
-          const CartaoTelefone(),
-          const CartaoEmail(),
-        ],
+    return Scaffold(
+      body: Column(
+        children: [CartaoResponsivo()],
       ),
     );
   }

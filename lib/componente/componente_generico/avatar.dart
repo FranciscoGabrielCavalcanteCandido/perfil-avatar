@@ -9,7 +9,7 @@ class Avatar extends StatelessWidget {
   Widget criarAvatar(BuildContext context, double largura) {
     return CircleAvatar(
       backgroundImage: NetworkImage(urlImagem),
-      radius: largura / 3,
+      radius: 50,
     );
   }
 

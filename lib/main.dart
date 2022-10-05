@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:perfil_/cartao_responsivo.dart';
 import 'package:perfil_/home.dart';
 
 void main() {
+  /*
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);*/
   runApp(const MyApp());
 }
 
@@ -26,7 +31,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const Home(),
+      home: const CartaoResponsivo(),
     );
   }
 }

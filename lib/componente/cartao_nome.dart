@@ -9,7 +9,7 @@ class CartaoNome extends StatelessWidget {
     return const Center(
       child: Text(
         'Francisco Gabriel',
-        style: TextStyle(fontSize: 25, color: Colors.black),
+        style: TextStyle(fontSize: 15, color: Colors.black),
       ),
     );
   }
